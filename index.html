@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
         <div class="photo">
-            <img src="assets/img/img-profil.jpg" alt="photo de profil">
+            <a href="assets/img/img-profil.jpg"><img src="assets/img/img-profil.jpg" alt="photo de profil"></a>
         </div>
         <div class="des">
             <h1>Hocquet Jeremy</h1>
-            <p id="post">Développeur Web et Web Mobile</p>
-            <a href="mailto:jeremok06@gmail.com"><img src="assets/img/mail.png" alt="logo mail">Mail</a>
-            <a href="https://www.google.fr/maps/place/36+Chem.+de+la+Font+des+Muls,+06580+Pégomas/@43.596007,6.9340158,17z/data=!3m1!4b1!4m6!3m5!1s0x12cc2813f30ac76b:0xccced94d5e41be96!8m2!3d43.596007!4d6.9365907!16s%2Fg%2F11c1r0jrw_?entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoASAFQAw%3D%3D"><img src="assets/img/adress.png" alt="logo adress">Adresse</a>
-            <a href="tel:0783588661"><img src="assets/img/phone.png" alt=" logo téléphone">Téléphone</a>
-            <p><img src="assets/img/car.png" alt="logo voiture">Permis B</p>
+            <p class="post">Développeur Web et Web Mobile</p>
+            <div class="flex">
+                <a href="mailto:jeremok06@gmail.com"><img src="assets/img/mail.png" alt="logo mail">Mail</a>
+                <a href="https://www.google.fr/maps/place/Nice-Ville/@43.7026679,7.2602678,17z/data=!4m6!3m5!1s0x12cdd00630b6fb9d:0x70199f2a745ea0d5!8m2!3d43.704612!4d7.261933!16s%2Fg%2F1tcx46h1?entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoASAFQAw%3D%3D"><img src="assets/img/adress.png" alt="logo adress">Adresse</a>
+                <a href="tel:0707070707"><img src="assets/img/phone.png" alt=" logo téléphone">Téléphone</a>
+                <p class="address"><img src="assets/img/car.png" alt="logo voiture">Permis B</p>
+            </div>
         </div>
     </header>
     <main>
@@ -24,16 +27,24 @@
             <div class="competences">
                 <h2>Compétences</h2>
                 <hr class="light">
-                <p>HTML <div class="star">★★★★☆</div></p>
-                <p>CSS <div class="star">★★★★☆</div></p>
+                <div class="comp">
+                    <p id="ht">HTML</p>
+                    <p class="star">★★★★☆</p>
+                    <p id="cs">CSS</p>
+                    <p class="star">★★★★☆</p>
+                </div>
             </div>
-            <!--A modif-->
             <div class="langues">
                 <h2>Langues</h2>
                 <hr class="light">
-                <p>Français <div>Langue maternelle</div></p>
-                <p>Anglais <div>Professionnel</div></p>
-                <p>Italien <div>Notions</div></p>
+                <div class="lang">
+                    <p id="fr">Français</p>
+                    <p>Langue maternelle</p>
+                    <p id="en">Anglais</p>
+                    <p>Professionnel</p>
+                    <p id="it">Italien</p>
+                    <p>Notions</p>
+                </div>
             </div>
             <div class="qualites">
                 <h2>Qualités</h2>
@@ -59,27 +70,48 @@
             <div class="profil">
                 <h2>Profil</h2>
                 <hr class="light">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque ullam aliquam facilis ut illum fuga unde sed consectetur nemo. Numquam eum architecto quas iure quae perspiciatis aliquid temporibus explicabo.</p>
+                <p>Je viens de finir ma formation de développeur web. J'ai déjà de l'expérience dans le monde du travail. Je cherche activement un travail dans le domaine du web. Pour obtenir encore plus d'expérience.</p>
             </div>
-            <!--A modif-->
             <div class="formations">
                 <h2>Formations</h2>
                 <hr class="light">
-                <p>Titre Professionnel DWWM - 2023/2024</p>
-                <p>Baccalauréat - 2022</p>
+                <div class="form">
+                    <div id="dwwm">
+                        <p id="tpd">Titre Professionnel DWWM</p>
+                        <p class="date">2024</p>
+                        <p class="place">Centre Européen de Formation</p>
+                    </div>
+                    <div id="bac">
+                        <p id="bc">Baccalauréat</p>
+                        <p class="date">2022</p>
+                        <p class="place">Lycée de ???</p>
+                    </div>
+                </div>
             </div>
-            <!--A modif-->
             <div class="stages">
                 <h2>Stages</h2>
                 <hr class="light">
-                <p>Peintre en bâtiment</p>
+                <div class="st">
+                    <p id="peb">Peintre en bâtiment</p>
+                    <p class="date">2021</p>
+                    <p class="place">Société ???</p>
+                </div>
             </div>
-            <!--A modif-->
-            <div class="experince">
+            <div class="experiences">
                 <h2>Expérience professionnelle</h2>
                 <hr class="light">
-                <p>Préparateur - Conditionneur Kerry septembre 2023 - decembre 2023, juin 2024 - aout 2024</p>
-                <p>Electricien - Plombier - Climaticien E4 novembre 2024</p>
+                <div class="exp">
+                    <div class="exp1">
+                        <p id="prep">Préparateur - Conditionneur</p>
+                        <p class="date">Septembre 2023 - Decembre 2023, Juin 2024 - Aout 2024</p>
+                        <p class="place">Kerry</p>
+                    </div>
+                    <div class="exp2">
+                        <p id="elec">Electricien - Plombier - Climaticien</p>
+                        <p class="date">Novembre 2024</p>
+                        <p class="place">Société E4</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -87,7 +119,7 @@
         <div class="resaux">
             <a href="https://github.com/Doarj"><img src="assets/img/github.png" alt="logo github"></a>
         </div>
-        <small>Mis à jour le : 10/03/2025</small>
+        <p>Mis à jour le : 10/03/2025</p>
     </footer>
 </body>
 </html>
